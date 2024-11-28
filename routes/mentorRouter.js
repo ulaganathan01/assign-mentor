@@ -46,7 +46,7 @@ mentorRouter.post("/assign-student/:mentorId", async (req, res) => { // TO assig
   }
 });
 
-mentorRouter.get("/get-stduents/:mentorId", async(req, res) => { //Api to get all the students for a particular mentor
+mentorRouter.get("/get-students/:mentorId", async(req, res) => { //Api to get all the students for a particular mentor
     const {mentorId} = req.params;
     try{
         // const studentsList = await Mentor.findOne({_id: new ObjectId(mentorId)}, {students: 1, _id:0});
